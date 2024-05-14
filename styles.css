@@ -10,10 +10,14 @@ ul{
   box-sizing: border-box;
   border-color: rgba(226, 32, 32, 0.22);
 }
+h1{
+  margin: 0px;
+}
   
 
-body{
-
+body,html{
+  width: 100%;
+  height: 100%;
   margin: 0px; 
   border-right: 10px;
 
@@ -28,6 +32,7 @@ hr{
 }
 
 .navbar{
+  height: 18vh;
   margin: 0px;
   padding: 10px;
   border-right: 10px;
@@ -98,7 +103,7 @@ hr{
   border-style: solid;
   border: 1px;
   padding: 13em 6.5em 7em;
-  border: 10px;
+  /* border: 10px; */
   justify-content: center;
   align-items: center;
   /*  display: flex; */
@@ -140,7 +145,7 @@ hr{
 
 .Who h1,h2,h3,h4,h5{
   display: inline;
- 
+
 }
 h1[draggable="false"]{
  color: blue;
@@ -154,14 +159,20 @@ h1[draggable="false"]{
   border-radius: 100px;
   margin-left: 2em  ;
 }
+  .content{
+    h1{
+      align-items: center;
+    }
+  }
  
 
   .What{
-    padding: 9em;
+    padding: 7em;
     text-align: center;
-    border-top-style: solid;
-    border-bottom-style: solid;
+
     background: #6DA4AA;
+    min-height: 86vh;
+    height: max-content;
     /* border-radius: 100px; */
   }  
   .What ul li{
@@ -195,3 +206,7 @@ h1[draggable="false"]{
     }
 }
 
+.When{
+  background: #6DA4AA;
+  height: 86vh;
+}
